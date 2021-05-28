@@ -1,0 +1,65 @@
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    background-image: url('./images/t-rex-background.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    animation: moveBG 100s infinite linear;
+}
+
+.dino {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    /* background-color: red; */
+    bottom: 0px;
+    left: 50px;
+    background-image: url('./images/t-rex.png');
+}
+
+h2{
+    font-family: 'Press Start 2P';
+}
+
+@keyframes moveBG {
+    from {background-position: 1000%;}
+    to {background-position: 0%;}
+}
+
+.obstacle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    /* background-color: skyblue; */
+    background-image: url('./images/cacti.png');
+    bottom: 0px;
+}
+
+.overPage {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    display: none;
+    width: 50%;
+    height: 50%;
+    border: solid 2px black;
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+}
+
+button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    /* background-color: rgb(219, 228, 231); */
+    /* margin: auto; */
+    font-family: 'Press Start 2P';
+    border: double;
+    border-radius: 10%;
+    /* bottom: 0px; */
+}
